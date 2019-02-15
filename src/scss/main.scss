@@ -3,6 +3,7 @@
 @import 'mixin';
 @import "uyeler";
 @import "yonetim";
+@import "neleryapiyoz";
 
 
 /*
@@ -128,6 +129,8 @@ body,html{
     margin-top: 22px;
     .list-group{
       border: 1px solid rgba($color-1,.3);
+      @include border-radius(4px);
+
       p{
         padding: 10px;
         background: $color-1;
@@ -149,7 +152,6 @@ body,html{
           border-bottom: 0px;
         }
         &.active{
-          background: rgba($color-1,.9);
           background: rgba($color-1,.9);
         }
       }
