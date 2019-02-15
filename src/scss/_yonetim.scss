@@ -1,0 +1,27 @@
+.page-dernek-yonetim{
+  .yonetim{
+    .yonetim-item{
+      margin-bottom: 30px;
+      border: 2px solid rgba($color-1,.6);
+      overflow: hidden;
+      .card-img{
+        img{
+          width: 100%;
+        }
+      }
+      .card-body{
+        text-align: center;
+        .isim{
+          font-size: 17px;
+          font-weight: 400;
+          span{
+            font-weight: 500;
+          }
+        }
+        .pozisyon{
+
+        }
+      }
+    }
+  }
+}
