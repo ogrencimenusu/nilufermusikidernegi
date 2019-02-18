@@ -1,0 +1,30 @@
+.page-nota_arsivi{
+  .table{
+    thead{
+      th{
+        color: $color-1;
+        border-top: 0;
+        &:nth-last-child(1){
+          text-align: center;
+        }
+      }
+    }
+    tbody{
+      tr{
+        th{
+          color: $color-1;
+        }
+      }
+    }
+    a.btn{
+      border: 1px solid transparent;
+      background: $color-1;
+      color: $color-white;
+      &:hover{
+        background: $color-white;
+        color: $color-1;
+        border-color: $color-1;
+      }
+    }
+  }
+}
