@@ -1,0 +1,41 @@
+.page-etkinlik{
+  margin-left: -30px;
+  .etkinlik-item{
+    position: relative;
+    margin-right: -15px;
+    margin-bottom: 30px;
+    border-color: rgba($color-1,.2);
+
+    h3{
+      color: $color-1;
+    }
+    .item-content{
+      font-size: 13px;
+      text-align: justify;
+    }
+    .tarih{
+      display: inline-block;
+      margin: auto;
+      margin-top: -15px;
+      font-size: 12px;
+      padding: 5px 7px;
+      background: $color-white;
+      color: $color-1;
+      @include border-radius(4px);
+      border:1px solid rgba($color-1,.2);
+      font-weight: bold;
+    }
+    .btn{
+      @include shadow(none);
+      border: 1px solid $color-1;
+      color: $color-1;
+      margin-top: 10px;
+      font-weight: bold;
+      font-size: 13px;
+      &:hover{
+        color: $color-white;
+        background: $color-1;
+      }
+    }
+  }
+}
