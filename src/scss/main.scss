@@ -79,8 +79,9 @@ body,html{
               li{
                 list-style-type: none;
                 a{
-                  padding-bottom: 1px;
-                  padding-right: 3px;
+                  @include border-radius(4px);
+                  padding: 4px 6px;
+                  display: inline-block;
                   text-decoration: none;
                   color: $color-black;
                   font-size: 14px;

@@ -1,4 +1,5 @@
 .page-nota_arsivi{
+  margin-right: -30px;
   .table{
     thead{
       th{
@@ -25,6 +26,52 @@
         color: $color-1;
         border-color: $color-1;
       }
+    }
+  }
+}
+.page-klsk-eserler{
+  .butonlar{
+    margin-bottom: 30px;
+    .buton{
+      margin-bottom: 5px;
+      .btn{
+        border-bottom: 1px solid rgba($color-1,.2);
+        text-align: left;
+        width: 100%;
+        height: 100%;
+        @include border-radius(4);
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        &:hover{
+          background: rgba($color-1,.7);
+          color: $color-white;
+        }
+        &[aria-expanded='true']{
+          color: $color-white;
+          background: $color-1;
+          @include shadow(1px 1px 22px -4px $color-black)
+        }
+      }
+    }
+  }
+  .collapse-wrap{
+
+    .collapse-item{
+
+      .collapse,.collapsing{
+        border: 1px solid rgba($color-1,.5);
+        margin-top: 15px;
+        border-top: 0px;
+        border-right: 0px;
+      }
+    }
+    h1{
+      display: inline-block;
+      background: $color-1;
+      padding: 10px;
+      color: $color-white;
+      font-size: 19px;
     }
   }
 }
