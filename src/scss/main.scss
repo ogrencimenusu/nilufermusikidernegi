@@ -5,6 +5,7 @@
 @import "yonetim";
 @import "neleryapiyoz";
 @import "nota_arsivi";
+@import "videolar";
 
 
 /*
@@ -86,7 +87,7 @@ body,html{
                   color: $color-black;
                   font-size: 14px;
                   @include transition(300ms all ease);
-                  &:hover{
+                  &:hover, &.active{
                     color:$color-white;
                     background: $color-1;
                   }
@@ -114,6 +115,7 @@ body,html{
             }
           }
           a.nav-link{
+
             height: 100%;
             color: $color-black;
             font-weight: 500;
@@ -123,7 +125,7 @@ body,html{
             align-items: center;
             justify-content: center;
             @include transition(all 300ms ease);
-            &:hover{
+            &:hover, &.active{
               background: $color-1;
               color: $color-white;
             }

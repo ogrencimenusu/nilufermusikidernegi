@@ -1,0 +1,48 @@
+.page-video{
+  margin: 0px -15px 0px -30px;
+  .card{
+    margin-right: -15px;
+    margin-bottom: 15px;
+    border: 0;
+    @include border-radius(0px);
+    a{
+      text-decoration: none;
+    }
+    .image{
+      @include border-radius(4px);
+      overflow: hidden;
+      @include shadow(1px 1px 30px -10px $color-black);
+      img{
+        @include transition(300ms all ease);
+        @include border-radius(4px);
+        @include transform(scale(1.5));
+      }
+    }
+    .card-footer{
+      @include border-radius(0px);
+      margin: 0px 20px;
+      border-top: 0;
+      align-items: center;
+      background: transparent;
+      border-bottom: 2px solid $color-black;
+
+      h3{
+        font-size: 16px;
+        margin-bottom: 0;
+        text-align: center;
+        color: $color-black;
+      }
+    }
+    &:hover{
+      img{
+        @include transform(scale(1));
+      }
+      .card-footer{
+        border-color: $color-1;
+        h3{
+          color: $color-1;
+        }
+      }
+    }
+  }
+}
