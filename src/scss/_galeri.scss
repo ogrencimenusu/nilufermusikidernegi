@@ -1,0 +1,35 @@
+.page-galeri{
+  .item{
+    a{
+      text-decoration: none;
+    }
+    margin-right: -15px;
+    margin-bottom: 15px;
+    h5{
+      @include transition(200ms all ease);
+      border-left: 2px solid $color-black;
+      margin-top: 15px;
+      margin-bottom: 0;
+      padding: 0px 15px;
+      color: $color-black;
+    }
+    .image{
+      overflow: hidden;
+      img{
+        width: 100%;
+        @include transition(300ms all ease)
+      }
+    }
+    &:hover{
+      .image{
+        img{
+          @include transform(scale(1.2) rotate(5deg));
+        }
+      }
+      h5{
+        background: $color-black;
+        color: $color-white;
+      }
+    }
+  }
+}
