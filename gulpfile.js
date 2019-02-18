@@ -24,19 +24,19 @@ gulp.task('cssMy', () => {
         .pipe(minifyCSS())
         .pipe(autoprefixer())
         .pipe(concat('app.min.css'))
-        .pipe(gulp.dest('dist/assets/_my/'))
+        .pipe(gulp.dest('dist/assets/my/'))
         .pipe(browserSync.stream());
 });
 gulp.task('anasayfaJs', () => {
     return gulp.src('src/js/anasayfa.js')
         .pipe(concat('anasayfa.js'))
-        .pipe(gulp.dest('dist/assets/_my/'))
+        .pipe(gulp.dest('dist/assets/my/'))
         .pipe(browserSync.stream());
 });
 gulp.task('mainJs', () => {
     return gulp.src('src/js/main.js')
         .pipe(concat('main.js'))
-        .pipe(gulp.dest('dist/assets/_my/'))
+        .pipe(gulp.dest('dist/assets/my/'))
         .pipe(browserSync.stream());
 });
 gulp.task('html', () => {
@@ -46,9 +46,9 @@ gulp.task('html', () => {
 });
 
 gulp.task('delete', () => del([
-    'dist/assets/_my/**/*.css',
-    'dist/assets/_my/anasayfa.js',
-    'dist/assets/_my/main.js',
+    'dist/assets/my/**/*.css',
+    'dist/assets/my/anasayfa.js',
+    'dist/assets/my/main.js',
     'dist/**/*.html'
 ]));
 
